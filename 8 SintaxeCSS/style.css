@@ -1,0 +1,21 @@
+#espe{
+    background-color: antiquewhite;
+}
+
+.ponto{
+    background-color: beige;
+}
+h1:hover{
+    background-color: blueviolet;
+    color: #ffffff;
+}
+p::first-letter{
+    font-size:x-large ;
+}
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+h1{
+    text-align: center;
+}

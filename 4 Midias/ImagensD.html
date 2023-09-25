@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <p><strong>DICA DE OURO</strong> é o site Pexels, onde podemos achar muitas imagens bonitas e de graça</p>
+    <ol>
+        <li>Abrir uma tag PICTURE</li>
+        <li>Colocar a <strong>maior</strong> imagem dentro de uma tag IMG</li>
+        <li>Utilizar a tag SOURCE:MEDIA:LINK e setar a max-whidth como desejado</li>
+        <li>Repetir o passo 3 caso necessário</li>
+        <li>Fechar a tag PICTURE</li>
+    </ol>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/small.jpg" type="image/jpg">
+        <source media="(max-width: 1050px)" srcset="imagens/medium.jpg" type="image/jpg">
+        <img src="imagens/big.jpg" alt="Um caminhão">
+    </picture> <br>
+    <a href="index.html" target="_self" rel="prev">Voltar</a>
+</body>
+</html>

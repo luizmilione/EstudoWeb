@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintaxe CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sintaxe</h1>
+    <p>No css, dividimos uma declaração em SELETOR &lbrace; propriedade : valor ; &rbrace; </p>
+    <p>Podemos adicionar estilo a todos os elementos de um determinado elemento, como P, H1, ...</p>
+    <p id="espe">Ou podemos atribuir uma id dentro do html para um local específico. Nesse caso, usamos a # para declarar no css</p>
+    <p class="ponto">Podemos também fazer uma classe com varios elementos. Nesse caso a declaração no css usa o .</p>
+    <p class="ponto">Outro parágrafo da mesma classe</p>
+    <p>Seletor por atributo, onde todos os elementos com um determinado atributo são selecionados. Ex "link". Na declaração usamos []</p>
+    <p>Temos tbm as pseudo classes, onde podemos colocar elementos especificos de uma tag , como o primeiro ou aquele cujo mouse está em cima. Na declaração colocamos tag:elemento</p>
+    <p>Dentro de pseudo classes ainda podemos colocar seletores em pseudo elementos, colocando tag::pseudo</p>
+    <p>Seletores universais valem para toda a página. Um * antes de &lbrace;</p>
+    <h1>Combinando seletores</h1>
+    <p>Podemos combinar algumas regras para seletores</p>
+    <ol>
+        <li>A,B: A e B recebem a mesma regra</li>
+        <li>A.B: Todos os B dentro de A. Similar com o uso de AND &&</li>
+        <li>A B: Todos os B descendentes de A. Podendo ser qualquer nível de descendencia</li>
+        <li>A>B: Todos os B filhos de A. Apenas os descendentes de primeiro grau</li>
+        <li>A+B: B sendo o próximo irmão de A.</li>
+        <li>A~B: B sendo os próximos irmãos de A</li>
+    </ol>
+    <h1>Prioridades</h1>
+    <p>Caso mais de um seletor de mesma especificidade entre em conflito, o último é o que valerá</p>
+    <p>Caso um seletor seja mais especifico que outro, ele é o que passa a valer</p>
+    <p>Caso, no CSS, vc coloque !important, essa regra será priorizada</p>
+</body>
+</html>
