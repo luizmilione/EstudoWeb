@@ -45,7 +45,20 @@
     <div id="bg">
         <p>Podemos colocar como backgroud uma imagem. Para isso, devemos utilizar backgroud-image: url(caminho);</p>
         <p>Caso queira que a imagem fique grande e no fundo, devemos usar os comandos backgroud-repeat: no-repeat; e também o backgroud-size: 100% 100%; para a imagem ocupar toda a página</p>
-        
+        <p>Podemos também usar a função linear-gradiente: (cor1, cor2); que fará com que o fundo fique com as cores que variam de cor1 (cima) até cor2</p>
+    </div>
+    <h1>Posicionamentos</h1>
+    <div id="bg">
+        <p>A propriedade POSITION organiza os elementos na tela. As 4 principais são</p>
+        <ul>
+            <strong>Static:</strong> Considerado como não posicionado, segue o fluxo de renderização da página</li>
+            <li><strong>Relative:</strong> Segue o fluxo de renderização da pagina, porém é afetado pelas Propriedades TOP, BOTTON, LEFT, RIGHT e Z-INDEX</li>
+            <li><strong>Fixed:</strong> Não segue o fluxo de renderização, ficando estático e fixo na tela</li>
+            <li><strong>Absolute:</strong> Não segue o fluxo de renderização, ficando ligado ao seu ancestral mais próximo. pode ser ajustado usando as propriendades TOP, ... . Não é reposicionado</li>
+        </ul>
+        <p>Por padrão, o podicionamento dos elementos são sempre static</p>
+        <p>As Propriedades TOP, BOTTON, LEFT e RIGHT posicionam o elemento a partir de sua respectiva borda, ou seja, top: 20px; move o elemento para baixo</p>
+        <p>A propriedade Z-INDEX move o elemento no indice Z, ou seja, caso ocorra um conflito entre 2 elementos, aquele com o z-index maior irá sobrepor</p>
     </div>
 </body>
 </html>
