@@ -24,3 +24,10 @@ div {
     border-color: rgb(243, 0, 0);
     box-sizing: border-box;
 }
+
+#bg{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    
+}
