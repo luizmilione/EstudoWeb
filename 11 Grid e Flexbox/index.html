@@ -4,15 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid e Flexbox</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>O que são</h1>
     <p>São estruturas CSS que trabalham a contensão de elementos baseadoas em posição, tamanho e alinhamento</p>
-    <div>
+    <div id="non">
         <h2>Layout flex</h2>
         <p>Indicado para alinhar componentes em uma única dimensão, linha ou coluna. <br>Os espaçamentos entre os itens são calculados automaticamente</p>
         <p>No codigo fica assim: </p>
         <p><code>display: flex; <br>flex-wrap: wrap;<br>justify-content: space-between;<br>align-itens: center;</code></p>
+        <p>Vamos ver um exemplo na prática:</p>
     </div>
+
+    <section class="flex">
+        <div>
+            <h1>Caixa 1</h1>
+            <p>Conteudo da caixa</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+
+        <div>
+            <h1>Caixa 2</h1>
+            <p>Conteudo da caixa</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+
+        <div>
+            <h1>Caixa 3</h1>
+            <p>Conteudo da caixa</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+
+        <div>
+            <h1>Caixa 4</h1>
+            <p>Conteudo da caixa</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+
+        <div>
+            <h1>Caixa 5</h1>
+            <p>Conteudo da caixa</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+
+        <div>
+            <h1>Caixa 6</h1>
+            <p>Conteudo da caixa</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+    </section>
+
+    <div id="non">
+        <h2>Grid Layout</h2>
+        <p>É multidimensonal, fazendo com que os elentos tenham interação linha-coluna</p>
+        <p>É mais complexo, uma vez que é necessário explicitar o fracionamento das divisões (linha/coluna)</p>
+        <p>O codigo é assim:</p>
+        <p><code>
+            display: grid; <br>
+            grid-templete-columns: repeat(#, #fr); Definimos as colunas e o espaçamento <br>
+            max-width: ###px; Tamanho máximo da viewport <br>
+            margin: # auto; <br>
+            grid-gap: ##px; Espaçamento entre itens
+        </code></p>
+        <p>Porém, para cada elemento devemos declarar seus <code>grid-column: #/#;</code> e <code>grid-row: #/#; que indicarão, baseados no <code>grid-templete-columns</code> as posições que irão ocupar</code></p>
+        <p>Exemplo:</p>
+    </div>
+    <section class="grid">
+        <div class="maior">
+            <h1>Maior 1</h1>
+            <p>Texto mais importate/relevante</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+        <div class="maior">
+            <h1>Maior 2</h1>
+            <p>Texto mais importate/relevante</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+        <div class="maior">
+            <h1>Maior 3</h1>
+            <p>Texto mais importate/relevante</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+        <div class="menor">
+            <h1>Menor 1</h1>
+            <p>Texto menos importate/relevante</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+        <div class="menor">
+            <h1>Menor 2</h1>
+            <p>Texto menos importate/relevante</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+        <div class="menor">
+            <h1>Menor 3</h1>
+            <p>Texto menos importate/relevante</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+        <div class="menor">
+            <h1>Menor 4</h1>
+            <p>Texto menos importate/relevante</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+        <div class="menor">
+            <h1>Menor 5</h1>
+            <p>Texto menos importate/relevante</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+        <div class="menor">
+            <h1>Menor 6</h1>
+            <p>Texto menos importate/relevante</p>
+            <a href="#">Link para algum lugar</a>
+        </div>
+        <div class="ban">
+            <h1>Banner</h1>
+            <a href="#">Compre aqui!!</a>
+        </div>
+    </section>
 </body>
 </html>
