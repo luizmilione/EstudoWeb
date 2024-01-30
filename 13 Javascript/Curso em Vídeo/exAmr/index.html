@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo?</title>
+    <style></style>
+</head>
+<body>
+    <h1>Eu te amo?</h1>
+    <button id="ye">Sim</button>
+    <button id="mb">Talvez</button>
+    <button id="no">Não</button>
+    <h1 id="res"></h1>
+    <script>
+        document.getElementById('ye').addEventListener('click', sim)
+        document.getElementById("mb").addEventListener('click', talvez)
+        document.getElementById('no').addEventListener('click', nao)
+        function sim(){
+            document.getElementById('res').innerHTML = 'Você está certíssima, eu te amo muito'
+            document.getElementsByTagName('body')[0].style.backgroundColor = 'greenyellow'
+            document.getElementById('ye').style.backgroundColor = 'green'
+        }
+        function talvez(){
+            document.getElementById('res').innerHTML = 'Como assim! Eu posso ter sido lento, mas isso não muda um fato!'
+            document.getElementsByTagName('body')[0].style.backgroundColor = 'grey'
+            document.getElementById('mb').style.backgroundColor = 'yellow'
+        }
+        function nao(){
+            document.getElementById('res').innerHTML = 'Achei que vc nunca errava :( Ainda pode escolher a alternativa certa'
+            document.getElementsByTagName('body')[0].style.backgroundColor = 'rgb(231, 123, 123)'
+            document.getElementById('no').style.backgroundColor = 'red'
+        }
+    </script>
+</body>
+</html>

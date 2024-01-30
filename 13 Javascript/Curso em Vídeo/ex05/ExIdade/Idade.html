@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Verificador de idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>
+                Ano de nascimento: 
+                <input type="number" name="" id="nasci">
+            </p>
+            <p>
+                Já fez aniversário esse ano?
+                <input type="radio" name="niver" id="sim" checked>
+                <label for="niver">Sim</label>
+                <input type="radio" name="niver" id="nao">
+                <label for="nao">Não</label>
+                <input type="radio" name="niver" id="hoj">
+                <label for="hoj">Hoje é meu aniversário</label>
+            </p>
+            <button id="verifica" onclick="verifica()">Verificar</button>
+        </div>
+        <div id="resp">
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Made by Luiz Gabriel Milione Assis</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

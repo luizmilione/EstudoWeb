@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicado()" onmouseenter="entrou()" onmouseout="saiu()">
+        <p>Chega mais com o seu mouse</p>
+    </div>
+    <script>
+        function clicado(){
+            document.getElementById('area').innerHTML = 'você clicou em mim!'
+        }
+        function entrou(){
+            document.getElementById('area').innerHTML = 'Agora clica em mim!'
+        }
+        function saiu(){
+            document.getElementById('area').innerHTML = 'Sentirei saudades :('
+        }
+    </script>
+</body>
+</html>

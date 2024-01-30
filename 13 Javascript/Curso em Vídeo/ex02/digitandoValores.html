@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apendendo JS</title>
+</head>
+<body>
+    <h1>Com um simples comando em JS</h1>
+    <p></p>
+    <script>
+        var valor = window.prompt('Digite um número: ')
+        var valor = Number(valor)
+        valor = valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        document.write(`Para a moeda do Brasil, escrevemos assim: ${valor}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a mexer com o DOM</title>
+</head>
+<body>
+    <h1>Mexendo com o DOM</h1>
+    <p>Aqui temos um parágrafo</p>
+    <div id="lista">
+        <p>Lista de coisas para fazer com o dom</p>
+        <ul id="elementos"></ul>
+        <button id="btn">No poder de um toque</button>
+    </div>
+    <script>
+        document.getElementById('elementos').innerHTML += '<li>Escrever em Html</li><li>Modificar o estilo</li>'
+        //innerHTML
+        document.getElementById('btn').addEventListener('click', clicou)
+        function clicou(){
+            document.getElementsByTagName('body')[0].style.backgroundColor = 'lightblue'
+            document.getElementById('btn').style.backgroundColor = 'brown'
+        }
+    </script>
+</body>
+</html>
