@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Client</title>
+</head>
+<body>
+    <div id="tela"></div>
+    <script>
+        fetch('https://jsonserver--lmilioneassis.repl.co/contatos')
+        .then(res => res.json())
+        .then(data => tela = document.getElementById('tela'))
+        .then( dados => { 
+            for(let i = 0; i < data.length; i++) {
+            const element = data[i];
+            tela.innerHTML = `nome: ${element.nome}`            
+            }
+        })
+    </script>
+</body>
+</html>
